@@ -53,9 +53,9 @@ const LoginScreen = ({navigation}) => {
 
 
   return (
-    <View className="flex items-center justify-center h-screen bg-stone-100">
-      <View className="flex-col items-center p-3 bg-yellow-300 border border-black rounded-md border-r-4 border-b-4">
-        <Text className="text-2xl font-bold m-3">Login</Text>  
+    <View className="flex-1 items-center justify-center bg-stone-100">
+      <View className="flex-col items-center p-2 px-4 bg-yellow-300 border border-black rounded-md border-r-4 border-b-4">
+        <Text className="text-xl font-bold m-2">Login</Text>  
         <TextInput
           placeholder='Email'
           className="w-60 p-2  bg-slate-100 my-2 border border-black border-r-2 border-b-2 placeholder:text-sm hover:border-spacing-2 rounded"
@@ -71,9 +71,9 @@ const LoginScreen = ({navigation}) => {
         />
 
         <TouchableOpacity
-        onPress = {LoginUser}
+        onPress = {()=>{navigation.replace('Home')}}
         >
-          <Text className="bg-blue-300 p-2 px-4 text-sm border border-black rounded-lg font-light border-r-2 border-b-2 hover:bg-blue-500 hover:text-white">Login</Text>
+          <Text className="bg-blue-300 p-2 px-4 mb-2 text-sm border border-black rounded-lg font-regular border-r-2 border-b-2 hover:bg-blue-500 hover:text-white">Submit</Text>
         </TouchableOpacity>
 
         {/* <TouchableOpacity
