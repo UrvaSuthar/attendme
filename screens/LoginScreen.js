@@ -28,31 +28,35 @@ const LoginScreen = ({navigation}) => {
   }
 
   return (
-    <View className="flex-1 items-center justify-center ">
-      <View className="items-center bg-red-300 rounded-lg p-4 py-6">
+    <View className="flex items-center justify-center h-screen bg-stone-100">
+      <View className="flex-col items-center p-3 bg-yellow-300 border border-black rounded-md border-r-4 border-b-4">
         <TextInput
           placeholder='Email'
-          className="w-80 p-3 rounded-xl mb-2 bg-slate-100"
+          className="w-80 p-3 rounded-xl bg-slate-100 my-2 p-1 border border-black border-r-2 border-b-2 placeholder:text-sm hover:border-spacing-2 rounded"
           value = {email}
           onChangeText = {(text) => setEmail(text)}
         />
         <TextInput
           placeholder='Password'
-          className="w-80 p-3 rounded-xl bg-slate-100"
+          className="w-80 p-3 rounded-xl bg-slate-100 my-2 p-1 border border-black border-r-2 border-b-2 placeholder:text-sm hover:border-spacing-2 rounded "
           value = {password}
           onChangeText = {(text) => setPassword(text)}
           secureTextEntry={true}
         />
+
         <TouchableOpacity
 
+
         >
-          <Text className="text-center text-white bg-blue-500 rounded-xl w-60 p-3 my-2">Login</Text>
+          <Text className="bg-blue-300 p-2 text-sm border border-black rounded-lg font-light border-r-2 border-b-2 hover:bg-blue-500 hover:text-white">Login</Text>
         </TouchableOpacity>
-        <TouchableOpacity
+
+        {/* <TouchableOpacity
         onPress = {RegisterUser }
         >
           <Text className="text-center text-blue-500 bg-white rounded-xl w-60 p-3 ">SignUp</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
+
       </View>
     </View>
   )
