@@ -21,14 +21,14 @@ const HomeScreen = ({ navigation }) => {
       >
         <Image
           source={{ uri: "https://thumbs.dreamstime.com/z/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-hipster-vector-stock-91462914.jpg" }}
-          className='h-10 w-10 bg-red-400 m-2 -mr-1 rounded-full'
+          className='h-16 w-16 bg-red-400 m-2 -mr-1 mt-5 rounded-full'
         />
         <View className='flex-1'>
           <Text className='text-bold text-gray-500 mt-1 text-lg'>
             Hello 👋,
           </Text>
           <Text className='text-bold text-xl'>
-            Name Here
+            Name Here 
           </Text>
         </View>
       </View>
