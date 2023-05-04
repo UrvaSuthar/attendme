@@ -12,11 +12,6 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     },
     {
-      name: 'code',
-      title: 'Code',
-      type: 'string',
-    },
-    {
       name: 'students',
       title: 'Students',
       type: 'array',
@@ -26,6 +21,11 @@ export default defineType({
           to: [{ type: 'student' }],
         },
       ],
+    },
+    {
+      name:'timetable',
+      title:'Timetable',
+      type:'image'
     },
     ],
 })

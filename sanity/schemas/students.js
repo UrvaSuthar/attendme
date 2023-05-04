@@ -24,5 +24,21 @@ export default defineType({
       type: 'string',
       validation: (Rule) => Rule.required().email(),
     },
+    {
+      name:'photo',
+      title:'Image Of Students',
+      type:'image'
+    },
+    {
+      name: 'class',
+      title: 'Class',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'class' }],
+        },
+      ],
+    },
   ]
 })
